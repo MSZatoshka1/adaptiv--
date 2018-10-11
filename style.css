@@ -1,0 +1,61 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button,input{
+    border: 0;
+}
+.conteiner{
+    max-width: 1024px; /*--  ВОЗМОЖНО НУЖНО МЕНЯТЬ  --*/
+    margin: 0 auto;
+}
+.tlf_flex{ /* Класс flex в телефонной версии потомки станут сверху вниз*/
+    display: flex;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+#bar_menu{
+    display: none;
+}
+.of_menu{ 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    .conteiner{
+       width: 100%;
+        margin: 0;
+    }
+    #bar_menu{ /* Кпонка скрывающаяся и показывающаяся меню*/
+        display: block;
+        width: 16px;  /*--  ВОЗМОЖНО НУЖНО МЕНЯТЬ  --*/
+        height: 16px; /*--  ВОЗМОЖНО НУЖНО МЕНЯТЬ  --*/
+    }
+    .of_menu{ 
+        display: none;
+    }
+    .www{
+        display: none; 
+    }
+    .tlf_flex{
+        flex-direction: column;
+     }     
+}
+
+ 
